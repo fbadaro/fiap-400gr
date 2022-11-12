@@ -1,0 +1,36 @@
+version: '3.9'
+
+networks:
+  fiap-400gr-network:
+    driver: bridge
+
+services:
+  sqlserver:
+    container_name: database-400gr
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+      - "1433:1433"
+    working_dir: /usr/src/app
+    command: sh -c ' chmod +x ./entrypoint.sh; ./entrypoint.sh & /opt/mssql/bin/sqlservr;'
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Pwd@1234!"
+    volumes:
+      - ./database/:/usr/src/app
+
+  api-catalog:
+    image: fiapfourgramscatalogapi
+    container_name: api-400gr-catalog
+    build:
+      context: ./api/src/services
+      dockerfile: ./Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.API/Dockerfile        
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:5001;http://+5000
+    ports:
+      - "5001:443"
+      - "5000:80"
+    depends_on:
+      - sqlserver
+    networks:
+      - fiap-400gr-network

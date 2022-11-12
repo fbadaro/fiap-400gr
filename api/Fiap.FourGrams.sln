@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fiap.FourGrams.Catalog", "Fiap.FourGrams.Catalog", "{5E941397-69DC-4383-9483-F246B5E11657}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.FourGrams.Catalog.API", "src\services\Fiap.FourGrams.Catalog\Fiap.FourGrams.Catalog.API\Fiap.FourGrams.Catalog.API.csproj", "{9874B62F-8AF8-4092-8D4C-3752E6440953}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fiap.FourGrams.Identity", "Fiap.FourGrams.Identity", "{7917C662-84EE-43C6-9427-1AC1ACEE1D8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.FourGrams.Identity.API", "src\services\Fiap.FourGrams.Identity\Fiap.FourGrams.Identity.API\Fiap.FourGrams.Identity.API.csproj", "{74F07839-5A12-49F8-BDBE-FCD1134A41EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.FourGrams.Catalog.Application", "src\services\Fiap.FourGrams.Catalog\Fiap.FourGrams.Catalog.Application\Fiap.FourGrams.Catalog.Application.csproj", "{460B1D99-8D10-4CFE-A2CD-EF82CC2B04BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.FourGrams.Catalog.Domain", "src\services\Fiap.FourGrams.Catalog\Fiap.FourGrams.Catalog.Domain\Fiap.FourGrams.Catalog.Domain.csproj", "{98369E98-FB4B-4F9C-B06F-572D41523F02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.FourGrams.Catalog.Data", "src\services\Fiap.FourGrams.Catalog\Fiap.FourGrams.Catalog.Data\Fiap.FourGrams.Catalog.Data.csproj", "{F99BF6BF-6670-4231-AB72-F61D3A4A9310}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.FourGrams.Catalog.Infrastructure", "src\services\Fiap.FourGrams.Catalog\Fiap.FourGrams.Catalog.Infrastructure\Fiap.FourGrams.Catalog.Infrastructure.csproj", "{B93DFAFF-CE4B-46C4-99CC-5E557CA79501}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Fiap.FourGrams.Lib", "Fiap.FourGrams.Lib", "{A40C45B4-6BE5-4E75-AB62-0D2346E4EEC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fiap.FourGrams.Lib.Core", "src\lib\Fiap.FourGrams.Lib.Core\Fiap.FourGrams.Lib.Core.csproj", "{8203F579-8905-4117-A395-997797D7A0BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9874B62F-8AF8-4092-8D4C-3752E6440953}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9874B62F-8AF8-4092-8D4C-3752E6440953}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9874B62F-8AF8-4092-8D4C-3752E6440953}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9874B62F-8AF8-4092-8D4C-3752E6440953}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74F07839-5A12-49F8-BDBE-FCD1134A41EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74F07839-5A12-49F8-BDBE-FCD1134A41EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74F07839-5A12-49F8-BDBE-FCD1134A41EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74F07839-5A12-49F8-BDBE-FCD1134A41EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{460B1D99-8D10-4CFE-A2CD-EF82CC2B04BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{460B1D99-8D10-4CFE-A2CD-EF82CC2B04BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{460B1D99-8D10-4CFE-A2CD-EF82CC2B04BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{460B1D99-8D10-4CFE-A2CD-EF82CC2B04BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98369E98-FB4B-4F9C-B06F-572D41523F02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98369E98-FB4B-4F9C-B06F-572D41523F02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98369E98-FB4B-4F9C-B06F-572D41523F02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98369E98-FB4B-4F9C-B06F-572D41523F02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F99BF6BF-6670-4231-AB72-F61D3A4A9310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F99BF6BF-6670-4231-AB72-F61D3A4A9310}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F99BF6BF-6670-4231-AB72-F61D3A4A9310}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F99BF6BF-6670-4231-AB72-F61D3A4A9310}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B93DFAFF-CE4B-46C4-99CC-5E557CA79501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B93DFAFF-CE4B-46C4-99CC-5E557CA79501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B93DFAFF-CE4B-46C4-99CC-5E557CA79501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B93DFAFF-CE4B-46C4-99CC-5E557CA79501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8203F579-8905-4117-A395-997797D7A0BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8203F579-8905-4117-A395-997797D7A0BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8203F579-8905-4117-A395-997797D7A0BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8203F579-8905-4117-A395-997797D7A0BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9874B62F-8AF8-4092-8D4C-3752E6440953} = {5E941397-69DC-4383-9483-F246B5E11657}
+		{74F07839-5A12-49F8-BDBE-FCD1134A41EF} = {7917C662-84EE-43C6-9427-1AC1ACEE1D8B}
+		{460B1D99-8D10-4CFE-A2CD-EF82CC2B04BD} = {5E941397-69DC-4383-9483-F246B5E11657}
+		{98369E98-FB4B-4F9C-B06F-572D41523F02} = {5E941397-69DC-4383-9483-F246B5E11657}
+		{F99BF6BF-6670-4231-AB72-F61D3A4A9310} = {5E941397-69DC-4383-9483-F246B5E11657}
+		{B93DFAFF-CE4B-46C4-99CC-5E557CA79501} = {5E941397-69DC-4383-9483-F246B5E11657}
+		{8203F579-8905-4117-A395-997797D7A0BB} = {A40C45B4-6BE5-4E75-AB62-0D2346E4EEC4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {618F6CBF-4104-4D30-AA50-85FC80A634CC}
+	EndGlobalSection
+EndGlobal
