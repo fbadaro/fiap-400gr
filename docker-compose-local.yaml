@@ -1,4 +1,4 @@
-version: '3.9'
+version: "3.9"
 
 networks:
   fiap-400gr-network:
@@ -17,20 +17,41 @@ services:
       SA_PASSWORD: "Pwd@1234!"
     volumes:
       - ./database/:/usr/src/app
+    networks:
+      - fiap-400gr-network
 
   api-catalog:
     image: fiapfourgramscatalogapi
     container_name: api-400gr-catalog
     build:
       context: ./api/src/services
-      dockerfile: ./Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.API/Dockerfile        
+      dockerfile: ./Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.API/Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ASPNETCORE_URLS: https://+:5001;http://+5000
+      ASPNETCORE_URLS: https://+:5701;http://+5702
+      ASPNETCORE_Kestrel__Certificates__Default__Password: 9HoGMnb7Lu8NFdHBz4Vq2rtKivzMhmMXhtvuB4TZcLMmbWfFmDQCjJeLURAJ4GYe
+      ASPNETCORE_Kestrel__Certificates__Default__Path: /https/devstore.academy-localhost.pfx
     ports:
-      - "5001:443"
-      - "5000:80"
+      - "5701:5701"
+      - "5702:5702"
+    volumes:
+      - ./certs:/https:ro
     depends_on:
+      - generate-pfx  
       - sqlserver
     networks:
       - fiap-400gr-network
+
+  generate-pfx:
+    image: emberstack/openssl
+    container_name: generate-pfx
+    volumes:
+      - ./certs:/https:r
+    command: >
+      sh -c "[ -e "./https/devstore.academy-localhost.pfx" ] && echo File Already exist || (
+      rm -f /https/devstore.academy-localhost.pfx &&
+      openssl genrsa -out devstore.rsa 2048 &&
+      openssl req -sha256 -new -key devstore.rsa -out devstore.csr -subj '/CN=localhost' &&
+      openssl x509 -req -sha256 -days 365 -in devstore.csr -signkey devstore.rsa -out devstore.crt &&
+      openssl pkcs12 -export -out /https/devstore.academy-localhost.pfx -inkey devstore.rsa -in devstore.crt -password pass:9HoGMnb7Lu8NFdHBz4Vq2rtKivzMhmMXhtvuB4TZcLMmbWfFmDQCjJeLURAJ4GYe &&
+      rm devstore.rsa devstore.csr devstore.crt)"

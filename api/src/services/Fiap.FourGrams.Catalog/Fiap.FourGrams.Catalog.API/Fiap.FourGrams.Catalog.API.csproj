@@ -14,4 +14,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Fiap.FourGrams.Catalog.Application\Fiap.FourGrams.Catalog.Application.csproj" />
+    <ProjectReference Include="..\Fiap.FourGrams.Catalog.Infrastructure\Fiap.FourGrams.Catalog.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

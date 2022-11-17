@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2566e1c8-6637-4ea2-a44c-df046311638d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../api/src/lib/Fiap.FourGrams.Lib.Core/Repositories/IRepositoryBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../api/src/lib/Fiap.FourGrams.Lib.Core/Repositories/IRepositoryBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.API/Fiap.FourGrams.Catalog.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../api/src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.API/Fiap.FourGrams.Catalog.API.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../api/src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.API/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../api/src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.API/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../api/src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.API/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.Domain/Class1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../api/src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.Domain/Fiap.FourGrams.Catalog.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../api/src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.Domain/Fiap.FourGrams.Catalog.Domain.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker-compose-local.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker-compose-local.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2Hafj2VMWq0OnTMlWljplYqWUvb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2566e1c8-6637-4ea2-a44c-df046311638d" name="Changes" comment="" />
+      <created>1668528249199</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668528249199</updated>
+    </task>
+    <servers />
+  </component>
+</project>

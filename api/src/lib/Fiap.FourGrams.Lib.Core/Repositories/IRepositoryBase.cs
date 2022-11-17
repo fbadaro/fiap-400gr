@@ -5,7 +5,7 @@ public interface IRepositoryBase<TEntity, TPrimaryKey> : IDisposable
 {
     Task<IEnumerable<TEntity>> GetAllAsync();
 
-    Task<TEntity> GetById(TPrimaryKey id);
+    Task<TEntity> GetByIdAsync(TPrimaryKey id);
 
     Task<TEntity> CreateAsync(TEntity entity);
 

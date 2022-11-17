@@ -1,9 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+	
+	<ItemGroup>
+		<ProjectReference Include="..\Fiap.FourGrams.Catalog.Application\Fiap.FourGrams.Catalog.Application.csproj" />
+		<ProjectReference Include="..\Fiap.FourGrams.Catalog.Data\Fiap.FourGrams.Catalog.Data.csproj" />
+	</ItemGroup>
 
 </Project>
