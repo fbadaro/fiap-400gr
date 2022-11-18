@@ -12,7 +12,7 @@ public class FourGramsContextFactory : IDesignTimeDbContextFactory<FourGramsCont
         {
             IConfigurationRoot configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile(Directory.GetCurrentDirectory() + "/../Fiap.FourHunGrams.API/appsettings.json")
+                .AddJsonFile(Directory.GetCurrentDirectory() + "/../Fiap.FourGrams.Catalog.API/appsettings.json")
                 .Build();
 
             var builder = new DbContextOptionsBuilder<FourGramsContext>();

@@ -21,11 +21,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\Fiap.FourGrams.Catalog.Domain\Fiap.FourGrams.Catalog.Domain.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Mappings\" />
+		<ProjectReference Include="..\Fiap.FourGrams.Catalog.Domain\Fiap.FourGrams.Catalog.Domain.csproj" />
 	</ItemGroup>
 
 </Project>
