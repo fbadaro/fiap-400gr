@@ -1,0 +1,566 @@
+{
+	"info": {
+		"_postman_id": "51229443-02e3-4dba-bdfc-3806f533adcb",
+		"name": "400Gramas API",
+		"description": "Api do aplicativo 400gramas\n\nContact Support:\n Name: 400gramas.com.br",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6860944"
+	},
+	"item": [
+		{
+			"name": "catalogo",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "Get Catalogo By Id",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/catalogo/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"catalogo",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "non ex nisi",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/catalogo/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"catalogo",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "non ex nisi",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"caminhoImagem\": \"Duis cillum laboris proident adipisicing\",\n  \"categoria\": {\n    \"nome\": \"ipsum consectetur deserunt consequat anim\",\n    \"id\": \"urn:uuid:32671323-1b33-aff1-47a2-f862d3756b84\",\n    \"descricao\": \"ea exe\",\n    \"desconto\": -23664266.783709705\n  },\n  \"descricao\": \"eiusmod id ex sed dolor\",\n  \"descricaoResumida\": \"dolore nostrud magna consectetur\",\n  \"nome\": \"in deserunt non occaecat mollit\",\n  \"id\": \"27216f71-8e92-39cd-7073-a98d19fae70e\",\n  \"precoKilo\": -6566280.349667862,\n  \"precoUnitario\": 4968695.041586861\n}"
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/catalogo/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"catalogo",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "non ex nisi",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Put Catalogo",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"caminhoImagem\": \"Duis cillum laboris proident adipisicing\",\n  \"categoria\": {\n    \"nome\": \"ipsum consectetur deserunt consequat anim\",\n    \"id\": \"urn:uuid:32671323-1b33-aff1-47a2-f862d3756b84\",\n    \"descricao\": \"ea exe\",\n    \"desconto\": -23664266.783709705\n  },\n  \"descricao\": \"eiusmod id ex sed dolor\",\n  \"descricaoResumida\": \"dolore nostrud magna consectetur\",\n  \"nome\": \"in deserunt non occaecat mollit\",\n  \"id\": \"27216f71-8e92-39cd-7073-a98d19fae70e\",\n  \"precoKilo\": -6566280.349667862,\n  \"precoUnitario\": 4968695.041586861\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/catalogo/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"catalogo",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "non ex nisi",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"caminhoImagem\": \"Duis cillum laboris proident adipisicing\",\n  \"categoria\": {\n    \"nome\": \"ipsum consectetur deserunt consequat anim\",\n    \"id\": \"urn:uuid:32671323-1b33-aff1-47a2-f862d3756b84\",\n    \"descricao\": \"ea exe\",\n    \"desconto\": -23664266.783709705\n  },\n  \"descricao\": \"eiusmod id ex sed dolor\",\n  \"descricaoResumida\": \"dolore nostrud magna consectetur\",\n  \"nome\": \"in deserunt non occaecat mollit\",\n  \"id\": \"27216f71-8e92-39cd-7073-a98d19fae70e\",\n  \"precoKilo\": -6566280.349667862,\n  \"precoUnitario\": 4968695.041586861\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/catalogo/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"catalogo",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "non ex nisi",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Bad Request",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"caminhoImagem\": \"Duis cillum laboris proident adipisicing\",\n  \"categoria\": {\n    \"nome\": \"ipsum consectetur deserunt consequat anim\",\n    \"id\": \"urn:uuid:32671323-1b33-aff1-47a2-f862d3756b84\",\n    \"descricao\": \"ea exe\",\n    \"desconto\": -23664266.783709705\n  },\n  \"descricao\": \"eiusmod id ex sed dolor\",\n  \"descricaoResumida\": \"dolore nostrud magna consectetur\",\n  \"nome\": \"in deserunt non occaecat mollit\",\n  \"id\": \"27216f71-8e92-39cd-7073-a98d19fae70e\",\n  \"precoKilo\": -6566280.349667862,\n  \"precoUnitario\": 4968695.041586861\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/catalogo/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"catalogo",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "non ex nisi",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Delete Catalogo",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/catalogo/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"catalogo",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "non ex nisi",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/catalogo/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"catalogo",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "non ex nisi",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Bad Request",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/catalogo/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"catalogo",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "non ex nisi",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								},
+								{
+									"name": "Not Found",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/catalogo/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"catalogo",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "non ex nisi",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Get Catalogo",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/catalogo",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"catalogo"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/catalogo",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"catalogo"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"caminhoImagem\": \"adipisicing deserunt tempor\",\n    \"categoria\": {\n      \"nome\": \"mollit in\",\n      \"id\": \"urn:uuid:7d3e793b-85bf-4828-6eab-15b85d1f908a\",\n      \"descricao\": \"amet adipisicing sit\",\n      \"desconto\": 75131289.99272999\n    },\n    \"descricao\": \"nulla voluptate\",\n    \"descricaoResumida\": \"nostrud\",\n    \"nome\": \"proident\",\n    \"id\": \"urn:uuid:27a05f78-b70a-67b9-20de-ade8dc5ac027\",\n    \"precoKilo\": 67524200.33822304,\n    \"precoUnitario\": 8505213.017577827\n  },\n  {\n    \"caminhoImagem\": \"ad eu id sit\",\n    \"categoria\": {\n      \"nome\": \"Ut ut nisi officia\",\n      \"id\": \"urn:uuid:9c75bbde-179f-d1d3-6660-ce03906f2a16\",\n      \"descricao\": \"irure et exercitation enim sint\",\n      \"desconto\": -94684018.28150626\n    },\n    \"descricao\": \"dolore labor\",\n    \"descricaoResumida\": \"consectetur\",\n    \"nome\": \"esse velit laborum Excepteur\",\n    \"id\": \"f0381c4c-ce40-6514-1a29-db35780f7f64\",\n    \"precoKilo\": -44257443.1473417,\n    \"precoUnitario\": 28895953.95887965\n  }\n]"
+						}
+					]
+				},
+				{
+					"name": "Post Catalogo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"caminhoImagem\": \"Duis cillum laboris proident adipisicing\",\n  \"categoria\": {\n    \"nome\": \"ipsum consectetur deserunt consequat anim\",\n    \"id\": \"urn:uuid:32671323-1b33-aff1-47a2-f862d3756b84\",\n    \"descricao\": \"ea exe\",\n    \"desconto\": -23664266.783709705\n  },\n  \"descricao\": \"eiusmod id ex sed dolor\",\n  \"descricaoResumida\": \"dolore nostrud magna consectetur\",\n  \"nome\": \"in deserunt non occaecat mollit\",\n  \"id\": \"27216f71-8e92-39cd-7073-a98d19fae70e\",\n  \"precoKilo\": -6566280.349667862,\n  \"precoUnitario\": 4968695.041586861\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/catalogo",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"catalogo"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"caminhoImagem\": \"Duis cillum laboris proident adipisicing\",\n  \"categoria\": {\n    \"nome\": \"ipsum consectetur deserunt consequat anim\",\n    \"id\": \"urn:uuid:32671323-1b33-aff1-47a2-f862d3756b84\",\n    \"descricao\": \"ea exe\",\n    \"desconto\": -23664266.783709705\n  },\n  \"descricao\": \"eiusmod id ex sed dolor\",\n  \"descricaoResumida\": \"dolore nostrud magna consectetur\",\n  \"nome\": \"in deserunt non occaecat mollit\",\n  \"id\": \"27216f71-8e92-39cd-7073-a98d19fae70e\",\n  \"precoKilo\": -6566280.349667862,\n  \"precoUnitario\": 4968695.041586861\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/catalogo",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"catalogo"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"caminhoImagem\": \"Duis cillum laboris proident adipisicing\",\n  \"categoria\": {\n    \"nome\": \"ipsum consectetur deserunt consequat anim\",\n    \"id\": \"urn:uuid:32671323-1b33-aff1-47a2-f862d3756b84\",\n    \"descricao\": \"ea exe\",\n    \"desconto\": -23664266.783709705\n  },\n  \"descricao\": \"eiusmod id ex sed dolor\",\n  \"descricaoResumida\": \"dolore nostrud magna consectetur\",\n  \"nome\": \"in deserunt non occaecat mollit\",\n  \"id\": \"27216f71-8e92-39cd-7073-a98d19fae70e\",\n  \"precoKilo\": -6566280.349667862,\n  \"precoUnitario\": 4968695.041586861\n}"
+						},
+						{
+							"name": "Bad Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"caminhoImagem\": \"Duis cillum laboris proident adipisicing\",\n  \"categoria\": {\n    \"nome\": \"ipsum consectetur deserunt consequat anim\",\n    \"id\": \"urn:uuid:32671323-1b33-aff1-47a2-f862d3756b84\",\n    \"descricao\": \"ea exe\",\n    \"desconto\": -23664266.783709705\n  },\n  \"descricao\": \"eiusmod id ex sed dolor\",\n  \"descricaoResumida\": \"dolore nostrud magna consectetur\",\n  \"nome\": \"in deserunt non occaecat mollit\",\n  \"id\": \"27216f71-8e92-39cd-7073-a98d19fae70e\",\n  \"precoKilo\": -6566280.349667862,\n  \"precoUnitario\": 4968695.041586861\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/catalogo",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"catalogo"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://localhost:5701",
+			"type": "string"
+		}
+	]
+}

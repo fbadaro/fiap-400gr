@@ -25,12 +25,12 @@ services:
     container_name: api-400gr-catalog
     build:
       context: ./api/src/services
-      dockerfile: ./Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.API/Dockerfile
+      dockerfile: ./Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.API/Dockerfile.Production
     environment:
-      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_ENVIRONMENT: Docker
       ASPNETCORE_URLS: https://+:5701;http://+5702
       ASPNETCORE_Kestrel__Certificates__Default__Password: 9HoGMnb7Lu8NFdHBz4Vq2rtKivzMhmMXhtvuB4TZcLMmbWfFmDQCjJeLURAJ4GYe
-      ASPNETCORE_Kestrel__Certificates__Default__Path: /https/devstore.academy-localhost.pfx
+      ASPNETCORE_Kestrel__Certificates__Default__Path: /https/devstore.academy-localhost.pfx      
     ports:
       - "5701:5701"
       - "5702:5702"

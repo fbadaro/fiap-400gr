@@ -1,3 +1,4 @@
+using Fiap.FourGrams.Catalog.API.Config;
 using Fiap.FourGrams.Catalog.API.Actions;
 using Fiap.FourGrams.Catalog.Infrastructure.AppConfigurations;
 using Fiap.FourGrams.Catalog.Infrastructure.AppServices;
@@ -36,7 +37,7 @@ builder.Services.AddCors(options => options.AddPolicy("400GramasCorsPolicy", bui
 }));
 
 builder.Services.AddAutoMapperApplication(typeof(Program).Assembly);
-builder.Services.AddDBContextApplication();
+builder.Services.AddDBContextApplication(builder.Environment.EnvironmentName);
 builder.Services.AddServiceApplication();
 
 var app = builder.Build();
@@ -47,5 +48,6 @@ app.UseHttpsRedirection();
 
 // Endpoints
 app.MapCatalogoEndpoint();
+app.MigrateDatabase();
 
 app.Run();

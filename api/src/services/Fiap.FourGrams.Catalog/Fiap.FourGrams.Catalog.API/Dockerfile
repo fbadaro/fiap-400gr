@@ -8,6 +8,10 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.API/Fiap.FourGrams.Catalog.API.csproj", "src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.API/"]
+COPY ["src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.Application/Fiap.FourGrams.Catalog.Application.csproj", "src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.Application/"]
+COPY ["src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.Data/Fiap.FourGrams.Catalog.Data.csproj", "src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.Data/"]
+COPY ["src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.Domain/Fiap.FourGrams.Catalog.Domain.csproj", "src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.Domain/"]
+COPY ["src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.Infrastructure/Fiap.FourGrams.Catalog.Infrastructure.csproj", "src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.Infrastructure/"]
 RUN dotnet restore "src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.API/Fiap.FourGrams.Catalog.API.csproj"
 COPY . .
 WORKDIR "/src/src/services/Fiap.FourGrams.Catalog/Fiap.FourGrams.Catalog.API"

@@ -12,6 +12,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\..\Fiap.FourGrams.Lib.Core\Fiap.FourGrams.Lib.Core.csproj" />
 	  <ProjectReference Include="..\Fiap.FourGrams.Catalog.Domain\Fiap.FourGrams.Catalog.Domain.csproj" />
 	</ItemGroup>
 
